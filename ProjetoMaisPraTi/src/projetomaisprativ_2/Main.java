@@ -183,8 +183,12 @@ public class Main {
                             String listaAlunos = "";
                             
                             for(int i=0; i<listaA.size(); i++){
+                            	
+                                if(listaA.get(i).getAlteracaoCad() != null) 
+                                	{
+                                		listaAlunos += listaA.get(i)+"\n--------------------------\n";
+                                	}
                                 
-                                listaAlunos += listaA.get(i)+"\n--------------------------\n";
                             }
                             
                             for(int j=0; j<listaP.size(); j++){
@@ -222,6 +226,7 @@ public class Main {
     public static void getDados(){
         Date dtNasc = null;
         Date  dtCad = null;
+        Date dtAlteraCad = null;
         int testeData = 0;
       
        String  nome = View.getValorString("Informe o nome:");
