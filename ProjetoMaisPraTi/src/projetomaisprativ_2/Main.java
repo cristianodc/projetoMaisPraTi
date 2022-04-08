@@ -207,7 +207,7 @@ public class Main {
 
                     }
             }else{
-                JOptionPane.showMessageDialog(null, "Escolha ao menos uma OpÃ§Ã£o!");
+                JOptionPane.showMessageDialog(null, "Escolha ao menos uma opção!");
                 resp= 10;
             }
                     
