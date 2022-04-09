@@ -19,6 +19,7 @@ public class Pessoa {
     private Date nascimento;
     private Date cadastro;
     private Date alteracaoCad;
+    private boolean alteraCad;
 
     public Pessoa() {
     }
@@ -29,6 +30,7 @@ public class Pessoa {
         this.nascimento = nascimento;
         this.cadastro = cadastro;
         this.alteracaoCad = alteracaoCad;
+        this.alteraCad = false;
     }
 
     /**
@@ -105,9 +107,24 @@ public class Pessoa {
     public String toString() {
         
         return "Nome: "+ this.getNome()+"\n"+"Telefone :"+this.getFone()+"\n"+"Data Nascimento : "
-                +Util.dateTostring(this.getNascimento())+"\n"+"Data Cadastro :"+Util.dateTostring(this.getCadastro())+"\n"+"Data Alteração Cad :"+
-        		 Util.dateTostring(this.getAlteracaoCad());
+                +Util.dateTostring(this.getNascimento())+"\n"+"Data Cadastro :"+Util.dateTostring(this.getCadastro())+"\n";
     }
+
+    public String cadAlterado() 
+    	{
+    		return "Nome: "+ this.getNome()+"\n"+"Telefone :"+this.getFone()+"\n"+"Data Nascimento : "
+                    +Util.dateTostring(this.getNascimento())+"\n"+"Data Cadastro :"+Util.dateTostring(this.getCadastro())+"\n"+"Data Alteração Cad :"+
+           		      Util.dateTostring(this.getAlteracaoCad());
+    	
+    	}
+	public boolean isAlteraCad() {
+		return alteraCad;
+	}
+
+	public void setAlteraCad(boolean alteraCad) {
+		this.alteraCad = alteraCad;
+	}
+    
     
     
     

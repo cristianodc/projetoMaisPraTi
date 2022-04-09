@@ -28,7 +28,7 @@ public  class PessoaDAO implements InterfaceDAO{
         }
     }
     /**
-     * M√©todo para adicionar um objeto Pessoa na lista 
+     * Metodo para adicionar Objeto Pessoa na lista 
      * @param pessoa
      * @return true se conseguiu inserir na lista caso contrario return false
      */
@@ -41,7 +41,7 @@ public  class PessoaDAO implements InterfaceDAO{
     }
 
     /**
-      * M√©todo para listar todos os registros cadastrados
+      * Metodo para listar todos os registros cadastrados
       * @return ArrayList<Pessoas>
       */
    public  List<Pessoa> listaTodos() {
@@ -49,7 +49,7 @@ public  class PessoaDAO implements InterfaceDAO{
     }
     
    /**
-     * M√©todo que realiza uma pesquisa em um arrayList recebe uma String e retorna um obj ou null
+     * Metodo que realiza uma pesquisa em um arrayList recebe uma String e retorna um obj ou null
      * @param String  nome
      * @return obj pessoa
      */
@@ -68,10 +68,10 @@ public  class PessoaDAO implements InterfaceDAO{
     }
 
      /**
-     * Metodo usado para atualiza√ß√£o de dados, recebe o nome , realiza uma pesquisa
-     * Se encontrado salva a posi√ß√£o(index) array e uma vari√°vel obj auxiliar
-     * ap√≥s exclui esse obj e realiza as altera√ß√µes necessarias;
-     * depois insere esse obj ja mesma posi√ßao
+     * Metodo usado para atualizaÁ„o de dados, recebe o nome , realiza uma pesquisa
+     * Se encontrado salva a posiÁ„o(index) array e uma vari·vel obj auxiliar
+     * apÛs exclui esse obj e realiza as alteraÁıes necess·rias;
+     * depois insere esse obj ja mesma posiÁ„o
      * @param String nome 
      */
     public void atualiza(String str) {
@@ -94,7 +94,7 @@ public  class PessoaDAO implements InterfaceDAO{
             this.listaP.add(index, getNovosVal(pessoa));
     }
      /**
-     * M√©todo para remover elementos do array recebe a posi√ßao no array
+     * Metodo para remover elementos do array recebe a posi√ßao no array
      * @param int index 
      * @return boolean true se conseguiu deletar ou caso contrario falso;
      */
@@ -189,6 +189,7 @@ public  class PessoaDAO implements InterfaceDAO{
         }     
         Date dtAtualicao = new Date();
         pessoa.setAlteracaoCad(dtAtualicao);
+        pessoa.setAlteraCad(true);
         
         return pessoa;
     }

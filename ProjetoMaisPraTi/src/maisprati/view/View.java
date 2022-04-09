@@ -17,30 +17,30 @@ import maisprati.model.Aluno;
  */
 public class View {
    /**
-    * Metodo usado para mostrar o menu que é uma String 
+    * Metodo usado para mostrar o menu que Ã© uma String 
     * em um JOPtionPan
-    * @return retorna a String menu com as opções para o usuari escolher
+    * @return retorna a String menu com as opÃ§Ãµes para o usuari escolher
     */    
     public static String  showMenuString(){
      String menu ="";
      
-        return menu = "[********Tela de Cadastro********]"+"\n\n"+"[**1**] - Para Cadastrar "+"\n"+
-               "[**2**] - Atualizar dados Aluno "+"\n"+"[**3**] - Deletar Cadastro Aluno "+"\n"+
-                "[**4**] - Atualizar dados Pessoa "+"\n"+"[**5**] - Deletar Cadastro Pessoa "+"\n"+
-                "[**6**] - Listar todos os Cadastros "+"\n"+"[**0**] - Para Sair ";
+        return menu = "[********Tela de Cadastro********]"+"\n\n"+"[**1**] - PARA CADASTRAR "+"\n\n"+
+               "[**2**] - Atualizar dados Aluno "+"\n\n"+"[**3**] - Deletar Cadastro Aluno "+"\n\n"+
+                "[**4**] - Atualizar dados Pessoa "+"\n\n"+"[**5**] - Deletar Cadastro Pessoa "+"\n\n"+
+                "[**6**] - Listar todos os Cadastros "+"\n\n"+"[**0**] - Para Sair ";
     
     }
     /**
-     * Apenas uma mensagem de boas vindas para o usuário 
+     * Apenas uma mensagem de boas vindas para o usuÃ¡rio 
      * situando ele que ele esta no contexto de cadastro
      */
     public static void bemVindo(){
-        JOptionPane.showMessageDialog(null, "_______BEM VINDO AO CADASTRO DE USUÁRIOS_______", "CADASTRO", 1);
+        JOptionPane.showMessageDialog(null, "_______BEM VINDO AO CADASTRO DE USUÃ�RIOS_______", "CADASTRO", 1);
     }
     
     /**
      * Metodo que captura os valores digitados pelo usuario no momento do cadastro de pessoas ou alunos
-     * sempre verificando se não existem valores nulos
+     * sempre verificando se nÃ£o existem valores nulos
      * @param msg esse parametro informa o tipo de dado que se quer
      * @return retorna uma String nunca vazia
      */
@@ -62,17 +62,17 @@ public class View {
         
     }
      /**
-     *Metodo que captura os valores digitados pelo usuario no momento da atualização de pessoas ou alunos
+     *Metodo que captura os valores digitados pelo usuario no momento da atualizaÃ§Ã£o de pessoas ou alunos
      * @param msg esse parametro informa o tipo de dado que se quer
-     * @return String que pode ser vazia ou com valor depende da necessidade do usuário.
+     * @return String que pode ser vazia ou com valor depende da necessidade do usuÃ¡rio.
       */  
      public static String getValorStringUp(String msg){
         
-          return JOptionPane.showInputDialog(null, msg, "ATUALIZAÇÃO", 1);
+          return JOptionPane.showInputDialog(null, msg, "ATUALIZAÃ‡ÃƒO", 1);
      
     } 
      /**
-      * Metodo usado para situar o usuário do contexto
+      * Metodo usado para situar o usuÃ¡rio do contexto
       * @param message mensagem que  o usuario precisa receber
       */
      public static void message(String message){

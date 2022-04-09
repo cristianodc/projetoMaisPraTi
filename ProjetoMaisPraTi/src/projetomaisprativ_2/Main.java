@@ -184,11 +184,20 @@ public class Main {
                             
                             for(int i=0; i<listaA.size(); i++){
                             	
-                                if(listaA.get(i).getAlteracaoCad() != null) 
+                              /*  if(listaA.get(i).getAlteracaoCad() != null) 
                                 	{
                                 		listaAlunos += listaA.get(i)+"\n--------------------------\n";
                                 	}
-                                
+                               */
+                            	
+                            	if(listaA.get(i).isAlteraCad() == false)
+                            		{
+                            			listaAlunos += "Nome :"+listaA.get(i).getNome()+"\n--------------------------\n";
+                            		}else 
+                            			{
+                            				listaAlunos +="Nome :"+listaA.get(i).getNome()+ "\n"+"Data Alteração Cad :"+
+                            			 Util.dateTostring(listaA.get(i).getAlteracaoCad())+"\n--------------------------\n";
+                            			}
                             }
                             
                             for(int j=0; j<listaP.size(); j++){

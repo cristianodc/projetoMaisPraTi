@@ -38,8 +38,13 @@ public class Aluno  extends Pessoa{
     @Override
     public String toString() {
          
-        return super.toString()+"\n"+"Nota Final :"+this.getNotaF();
+        return super.toString()+"Nota Final :"+this.getNotaF();
     }
     
+    @Override
+    public String cadAlterado() 
+    	{
+    		return super.toString()+"Nota Final :"+this.getNotaF();
+    	}
     
 }

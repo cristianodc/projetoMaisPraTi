@@ -203,6 +203,7 @@ public class AlunoDAO implements InterfaceDAO{
        
         Date dtAtualicao = new Date();
         aluno.setAlteracaoCad(dtAtualicao);
+        aluno.setAlteraCad(true);
         
        
         double notaF = 0;  
