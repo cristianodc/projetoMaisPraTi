@@ -44,7 +44,7 @@ public class Aluno  extends Pessoa{
     @Override
     public String cadAlterado() 
     	{
-    		return super.toString()+"Nota Final :"+this.getNotaF();
+    		return super.cadAlterado()+"Nota Final :"+this.getNotaF();
     	}
     
 }

@@ -182,36 +182,37 @@ public class Main {
                             String listaPessoas = "";
                             String listaAlunos = "";
                             
-                            for(int i=0; i<listaA.size(); i++){
-                            	
-                              /*  if(listaA.get(i).getAlteracaoCad() != null) 
-                                	{
-                                		listaAlunos += listaA.get(i)+"\n--------------------------\n";
-                                	}
-                               */
-                            	
-                            	if(listaA.get(i).isAlteraCad() == false)
-                            		{
-                            			listaAlunos += "Nome :"+listaA.get(i).getNome()+"\n--------------------------\n";
-                            		}else 
+                            for(Aluno aluno: listaA)
+                            	{
+                            		if(aluno.isAlteraCad())
                             			{
-                            				listaAlunos +="Nome :"+listaA.get(i).getNome()+ "\n"+"Data Alteração Cad :"+
-                            			 Util.dateTostring(listaA.get(i).getAlteracaoCad())+"\n--------------------------\n";
-                            			}
-                            }
-                            
-                            for(int j=0; j<listaP.size(); j++){
-                                
-                                listaPessoas += listaP.get(j)+"\n--------------------------\n";
-                            }
+                            			 listaAlunos += aluno.cadAlterado() +"\n--------------------------\n";
+                            			}else 
+                            				{
+                            				 listaAlunos += aluno.toString() +"\n--------------------------\n";
+                            				}
+                            	
+                            	}
+                           
+                            for(Pessoa pessoa: listaP)
+                            	{
+                            		if(pessoa.isAlteraCad())
+                            			{
+                            				listaPessoas += pessoa.cadAlterado() +"\n--------------------------\n";
+                            			}else 
+                            				{
+                            				listaPessoas += pessoa.toString() +"\n--------------------------\n";	
+                            				}
+                            	}
+                           
                             
                             if(listaAlunos.isEmpty()){
                                 
-                                listaAlunos = "SEM DADOS PARA EXIBIÃ‡ÃƒO";
+                                listaAlunos = "SEM DADOS PARA EXIBIÇÃO";
                             }
                             if(listaPessoas.isEmpty()){
                                 
-                                listaPessoas ="SEM DADOS PARA EXIBIÃ‡ÃƒO";
+                                listaPessoas ="SEM DADOS PARA EXIBIÇÃO";
                             }
                             JOptionPane.showMessageDialog(null,"LISTA DE ALUNOS \n"+ listaAlunos +"\n\n"+"LISTA DE PESSOAS \n"+listaPessoas);
                             break;

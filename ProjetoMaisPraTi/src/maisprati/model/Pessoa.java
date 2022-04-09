@@ -114,7 +114,7 @@ public class Pessoa {
     	{
     		return "Nome: "+ this.getNome()+"\n"+"Telefone :"+this.getFone()+"\n"+"Data Nascimento : "
                     +Util.dateTostring(this.getNascimento())+"\n"+"Data Cadastro :"+Util.dateTostring(this.getCadastro())+"\n"+"Data Alteração Cad :"+
-           		      Util.dateTostring(this.getAlteracaoCad());
+           		      Util.dateTostring(this.getAlteracaoCad())+"\n";
     	
     	}
 	public boolean isAlteraCad() {
