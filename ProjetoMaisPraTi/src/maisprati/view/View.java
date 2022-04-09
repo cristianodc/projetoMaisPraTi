@@ -25,9 +25,9 @@ public class View {
      String menu ="";
      
         return menu = "[********Tela de Cadastro********]"+"\n\n"+"[**1**] - PARA CADASTRAR "+"\n\n"+
-               "[**2**] - Atualizar dados Aluno "+"\n\n"+"[**3**] - Deletar Cadastro Aluno "+"\n\n"+
-                "[**4**] - Atualizar dados Pessoa "+"\n\n"+"[**5**] - Deletar Cadastro Pessoa "+"\n\n"+
-                "[**6**] - Listar todos os Cadastros "+"\n\n"+"[**0**] - Para Sair ";
+               "[**2**] - ATUALIZAR DADAS ALUNO "+"\n\n"+"[**3**] - DELETAR ALUNO "+"\n\n"+
+                "[**4**] - ATUALIZAR DADOS PESSOA "+"\n\n"+"[**5**] - DELETAR PESSOA "+"\n\n"+
+                "[**6**] - LISTAR TODOS OS CADASTROS "+"\n\n"+"[**0**] - PARA SAIR ";
     
     }
     /**
