@@ -67,13 +67,13 @@ public class Main {
                                       daoAluno.atualiza(listaA.get(index).getNome());
                                  }else{
                                  
-                                     JOptionPane.showMessageDialog(null, "Id n√£o informado!");
+                                     JOptionPane.showMessageDialog(null, " ID N√O INFORMADO !");
                                  }
                                  
 
                              }else{
 
-                               JOptionPane.showMessageDialog(null, "Sem dados para atualizar");
+                               JOptionPane.showMessageDialog(null, "SEM DADOS PARA ATUALIZAR ");
                              }
 
                             break;
@@ -95,24 +95,24 @@ public class Main {
                                     int index = Integer.parseInt(id);
 
                                     if (daoAluno.delete(index)) {
-                                        JOptionPane.showMessageDialog(null, "Elemento removido com sucesso");
+                                        JOptionPane.showMessageDialog(null, "ELMENTO REMOVIDO COM SUCESSO");
                                     } else {
-                                        JOptionPane.showMessageDialog(null, "N√£o foi possivel realizar Opera√ß√£o");
+                                        JOptionPane.showMessageDialog(null, "N√O FOI POSSÕVEL REALIZAR OPERA«√O");
                                     }
                                     
                                 } else {
 
-                                    JOptionPane.showMessageDialog(null, "Nenhum elemento selecionado!");
+                                    JOptionPane.showMessageDialog(null, "NENHUM ELEMENTO SELECIONADO!");
                                 }
 
                             } else {
 
-                                JOptionPane.showMessageDialog(null, "Lista vazia");
+                                JOptionPane.showMessageDialog(null, "LISTA VAZIA");
                             }
 
                             break;
                         case 4:
-                            //Atualiza√ß√£o de cadatro de Pessoas
+                            //AtualizaÁ„o de cadastro de Pessoas
                             listaP = (List<Pessoa>) daoP.getTodos();
 
                              if(!listaP.isEmpty()){
@@ -129,13 +129,13 @@ public class Main {
                                       daoP.atualiza(listaP.get(index).getNome());
                                  }else{
                                  
-                                     JOptionPane.showMessageDialog(null, "Id n√£o informado!");
+                                     JOptionPane.showMessageDialog(null, "ID N√O INFORMADO!");
                                  }
                                  
 
                              }else{
 
-                               JOptionPane.showMessageDialog(null, "Sem dados para atualizar");
+                               JOptionPane.showMessageDialog(null, "SEM DADOS PARA ATUALIZAR");
                              }
 
                             break;

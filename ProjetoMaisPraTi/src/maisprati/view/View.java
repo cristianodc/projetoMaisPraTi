@@ -53,7 +53,7 @@ public class View {
             teste = 1;
             }else{
                 
-                JOptionPane.showMessageDialog(null, "Por favor informe o valor solicitado");
+                JOptionPane.showMessageDialog(null, "POR FAVOR INFORME O VALOR SOLICITADO");
             }
             
           }while(teste ==0);
