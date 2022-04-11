@@ -106,7 +106,7 @@ public class Pessoa {
     @Override
     public String toString() {
         
-        return "Nome:              "+ this.getNome()+"\n"+"Telefone :"+this.getFone()+"\n"+"Data Nascimento : "
+        return "Nome: "+ this.getNome()+"\n"+"Telefone :"+this.getFone()+"\n"+"Data Nascimento : "
                 +Util.dateTostring(this.getNascimento())+"\n"+"Data Cadastro :"+Util.dateTostring(this.getCadastro())+"\n";
     }
 
