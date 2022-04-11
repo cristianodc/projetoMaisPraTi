@@ -153,7 +153,7 @@ public class AlunoDAO implements InterfaceDAO{
         Aluno a = aluno;
        
         
-       String nome = View.getValorStringUp("Informe o novo valor para o nome");
+       String nome = View.getValorStringUp("INFORME O NOVO VALOR PARA O NOME");
         
         if(!nome.isEmpty()){
             aluno.setNome(nome);
@@ -161,7 +161,7 @@ public class AlunoDAO implements InterfaceDAO{
             aluno.setNome(a.getNome());
         }
         
-        String fone = View.getValorStringUp("Informe o novo valor para o telefone");
+        String fone = View.getValorStringUp("INFORME O NOVO VALOR PARA O TELEFONE");
         
         if(!fone.isEmpty()){
             
@@ -175,7 +175,7 @@ public class AlunoDAO implements InterfaceDAO{
         int testeData  =0;
          while(testeData == 0){
                 
-               sdtNasc= View.getValorStringUp("Informe data Nascimento para atualizar : formato (10/09/1979) ");
+               sdtNasc= View.getValorStringUp("INFORME A DATA DE NASCIMENTO PARA ATUALIZAR: formato (10/09/1979) ");
                
                if(sdtNasc.isEmpty()){
                    
@@ -188,7 +188,7 @@ public class AlunoDAO implements InterfaceDAO{
                      testeData = 1;
                   }else{
 
-                    JOptionPane.showMessageDialog(null, "Formato errado tente esse (10/09/1979) ");
+                    JOptionPane.showMessageDialog(null, "FORMATO ERRADO TENTE NOVAMENTE (10/09/1979) ");
                  }
             }//fim 
          
@@ -207,7 +207,7 @@ public class AlunoDAO implements InterfaceDAO{
         
        
         double notaF = 0;  
-        String snotaF = View.getValorStringUp("Informe a nota final no aluno");
+        String snotaF = View.getValorStringUp("INFORME A NOTA FINAL DO ALUNO");
            
         if(!snotaF.isEmpty()){
             notaF = Double.parseDouble(snotaF);
