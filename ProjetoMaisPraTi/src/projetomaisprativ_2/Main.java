@@ -159,18 +159,18 @@ public class Main {
                                     int index = Integer.parseInt(idp);
                                     
                                        if (daoP.delete(index)) {
-                                        JOptionPane.showMessageDialog(null, "Elemento removido com sucesso");
+                                        JOptionPane.showMessageDialog(null, "ELEMENTO REMOVIDO COM SUCESSO");
                                     } else {
-                                        JOptionPane.showMessageDialog(null, "N√£o foi possivel realizar Opera√ß√£o");
+                                        JOptionPane.showMessageDialog(null, "N√O FOI POSSÕVEL REALIZAR A OPERA«√O");
                                     }
                                 
                                 }else{
-                                    JOptionPane.showMessageDialog(null, "Nenhum elemento selecionado");
+                                    JOptionPane.showMessageDialog(null, "NENHUM ELEMENTO SELECIONADO");
                                 }
                                 
                             }else{
                                 
-                                JOptionPane.showMessageDialog(null, "Lista Vazia");
+                                JOptionPane.showMessageDialog(null, "LISTA VAZIA");
                             }
                             break;
                         case 6:
@@ -221,7 +221,7 @@ public class Main {
 
                     }
             }else{
-                JOptionPane.showMessageDialog(null, "Escolha ao menos uma opÁ„o!");
+                JOptionPane.showMessageDialog(null, "ESCOLHA AO MENOS UMA OP«√O!");
                 resp= 10;
             }
                     
@@ -239,13 +239,13 @@ public class Main {
         Date dtAlteraCad = null;
         int testeData = 0;
       
-       String  nome = View.getValorString("Informe o nome:");
+       String  nome = View.getValorString("IMFORME O NOME:");
     
-       String fone = View.getValorString("Informe o telefone:");
+       String fone = View.getValorString("INFORME O TELEFONE:");
        
             while(testeData == 0){
                 
-              String sdtNasc= View.getValorString("Informe data Nascimento (10/09/1979) ");
+              String sdtNasc= View.getValorString("INFORME A DATA DE NASCIMENTO EX:(10/09/1979) ");
              
                dtNasc = Util.stringToDate(sdtNasc);
               
@@ -253,14 +253,14 @@ public class Main {
                      testeData = 1;
                   }else{
 
-                    JOptionPane.showMessageDialog(null, "Formato errado tente esse (10/09/1979) ");
+                    JOptionPane.showMessageDialog(null, "FORMATO ERRADO TENTE NOVAMENTE(10/09/1979) ");
                  }
             }
         
         
             dtCad = new Date();
       
-       String testeS = View.getValorString("Nota final (1)SIM (2)N√ÉO : ");
+       String testeS = View.getValorString("NOTA FINAL (1)SIM (2)N√O : ");
         
          if(!testeS.isEmpty()){
 
@@ -268,7 +268,7 @@ public class Main {
 
                 if(teste == 1){
 
-                    String notaS=    View.getValorString("Informe a nota final do aluno ");
+                    String notaS=    View.getValorString("INFORME A NOTA FINAL DO ALUNO");
 
                           if(!notaS.isEmpty()){
                               double notaF = Double.parseDouble(notaS);
@@ -276,18 +276,18 @@ public class Main {
                               
                              if(daoAluno.add(a)) {
                                
-                                View.message("Aluno cadastrado com sucesso ");
+                                View.message("ALUNO CADASTRADO COM SUCESSO!");
                              }else{
-                                View.message("N√£o foi poss√≠vel realizar o cadastro");
+                                View.message("N√O FOI POSSÕVEL REALIZAR O CADASTRO!");
                              }
                           }else{
                              //Se a nota final do aluno for 0
                              Aluno a = new Aluno( nome, fone, dtNasc, dtCad, dtCad,0);
                               if(daoAluno.add(a)) {
                                
-                                View.message("Aluno cadastrado com sucesso ");
+                                View.message("ALUNO CADASTRADO COM SUCESSO!");
                              }else{
-                                View.message("N√£o foi poss√≠vel realizar o cadastro");
+                                View.message("N√O FOI POSSÕVEL REALIZAR O CADASTRO!");
                              }
                           }  
 
@@ -295,10 +295,10 @@ public class Main {
                 }else{
                     Pessoa p =new Pessoa(nome, fone, dtNasc, dtCad, dtCad);
                     if(daoP.add(p)) {
-                          View.message("Pessoa cadastrado com sucesso ");
+                          View.message("PESSOA CADASTRADO COM SUCESSO !");
                                                  
                          }else{
-                          View.message("N√£o foi poss√≠vel realizar o cadastro");
+                          View.message("N√O FOI POSSÕVEL REALIZAR O CADASTRO!");
                       }
             }//fim teste se cadastra aluno ou pessoa
          }

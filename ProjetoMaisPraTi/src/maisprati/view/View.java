@@ -68,7 +68,7 @@ public class View {
       */  
      public static String getValorStringUp(String msg){
         
-          return JOptionPane.showInputDialog(null, msg, "ATUALIZAÃ‡ÃƒO", 1);
+          return JOptionPane.showInputDialog(null, msg, "ATUALIZAÇÃO", 1);
      
     } 
      /**
